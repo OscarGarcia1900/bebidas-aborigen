@@ -1,7 +1,8 @@
 export interface Product {
   id: string;
   name: string;
-  price: number; // Usaremos número para el precio
+  description: string;
+  price: number;
   imageUrl: string;
   region: string;
 }
