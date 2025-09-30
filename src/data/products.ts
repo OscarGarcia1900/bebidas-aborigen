@@ -2,43 +2,43 @@ import { Product } from '@/types/product';
 
 export const mockProducts: Product[] = [
   {
-    id: 'chicha-boyaca',
-    name: 'Chicha de Maíz',
+    id: 'guarapo-aborigen',
+    name: 'Guarapo Aborigen',
     description:
-      'Bebida ceremonial ancestral de los pueblos Muiscas, elaborada artesanalmente con maíz fermentado. Su sabor único y propiedades nutricionales la convierten en un tesoro de nuestra cultura. Perfecta para compartir en encuentros especiales.',
-    price: 15.0,
-    region: 'Boyacá',
-    imageUrl:
-      'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop',
-  },
-  {
-    id: 'guarapo-cundinamarca',
-    name: 'Guarapo de Caña',
-    description:
-      'Refrescante bebida campesina extraída del jugo puro de caña de azúcar, ligeramente fermentada. Acompañó las jornadas agrícolas de nuestros ancestros y hoy revive con su dulzor natural y energizante sabor tradicional.',
-    price: 12.0,
-    region: 'Cundinamarca',
+      'Cada sorbo es un viaje a las raíces de la naturaleza, donde la sabiduría ancestral se encuentra con el placer sensorial. Bebida tradicional de Colombia con raíces ancestrales de comunidades indígenas y campesinas. Panela fermentada con nódulos de Kefir, infusionado con hierbas y especias. Rico en probióticos que favorecen la salud digestiva, aporta energía natural y refresca el cuerpo. 🏆 Ganador del 1er puesto en el Festival del Guarapo 2024.',
+    price: 8.0,
+    region: 'Bogotá',
     imageUrl:
       'https://images.unsplash.com/photo-1553531589-498ABC49118F?q=80&w=2070&auto=format&fit=crop',
   },
   {
-    id: 'masato-tolima',
-    name: 'Masato de Arroz',
+    id: 'viche-curado',
+    name: 'Viche Curado',
     description:
-      'Deliciosa bebida dulce elaborada con arroz, panela y especias aromáticas. Herencia de las comunidades indígenas del Tolima, su textura cremosa y sabor reconfortante la hacen ideal para cualquier momento del día.',
-    price: 14.0,
-    region: 'Tolima',
-    imageUrl:
-      'https://images.unsplash.com/photo-1627415494383-0407a2139049?q=80&w=1964&auto=format&fit=crop',
-  },
-  {
-    id: 'biche-pacifico',
-    name: 'Biche del Pacífico',
-    description:
-      'Aguardiente artesanal destilado de caña, símbolo de resistencia y patrimonio afrodescendiente del Pacífico colombiano. Aromatizado con hierbas tradicionales, su carácter intenso celebra la cultura y el espíritu de nuestras raíces.',
+      'El secreto medicinal del Pacífico colombiano. Destilado artesanal afrocolombiano del Pacífico, transmitido por generaciones como bebida ritual y medicinal. Elaborado con viche (destilado de caña), hierbas curativas, raíces y especias maceradas. Reconocido por sus propiedades revitalizantes, fortalece el sistema inmune y mejora la circulación gracias a su combinación de hierbas. ¡Prueba el sabor de la caña en cada sorbo!',
     price: 35.0,
     region: 'Pacífico',
     imageUrl:
       'https://images.unsplash.com/photo-1608275892095-83a3d5371465?q=80&w=1928&auto=format&fit=crop',
+  },
+  {
+    id: 'vinete',
+    name: 'Vinete',
+    description:
+      'Poción afrodisíaca y revitalizante. Una bebida ancestral que fusiona la fuerza del viche con el dulzor de la caña y las especias. Bebida afrocolombiana del Pacífico, utilizada en rituales de bienestar y celebración. Elaborado con viche (destilado de caña), panela, clavos de olor, canela, vainilla y otros botánicos. Considerado un potente reconstituyente y afrodisíaco, ideal para revitalizar el cuerpo y el alma, perfecto para la salud menstrual de la mujer.',
+    price: 30.0,
+    region: 'Pacífico',
+    imageUrl:
+      'https://images.unsplash.com/photo-1627415494383-0407a2139049?q=80&w=1964&auto=format&fit=crop',
+  },
+  {
+    id: 'aguardiente-nasa',
+    name: 'Aguardiente Artesanal Nasa',
+    description:
+      'Más que una bebida, es un legado ancestral de la comunidad Nasa, una fuente de energía y conexión con la tierra, perfecta para el cuerpo y el espíritu. Bebida tradicional de la comunidad indígena Nasa de Caloto, Cauca, utilizada para fortalecer el cuerpo y la mente. Destilado de caña curado con plantas sagradas. Aporta energía, calienta el vientre y conecta con la sabiduría ancestral a través de sus ingredientes naturales. 30% vol. / 0.2L',
+    price: 12.0,
+    region: 'Caloto - Cauca',
+    imageUrl:
+      'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop',
   },
 ];

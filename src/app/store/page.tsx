@@ -9,34 +9,50 @@ export default function StorePage() {
 
   return (
     <main className="mx-auto max-w-7xl px-6 py-16">
-      <h1 className="text-3xl font-bold">Tienda</h1>
-      <p className="mt-2 text-[--secondary]">Explora nuestra selecci n de bebidas.</p>
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-[--foreground]">Nuestra Tienda</h1>
+        <p className="mt-4 text-lg text-[--secondary] max-w-2xl mx-auto">
+          Descubre bebidas ancestrales que conectan con nuestras raíces culturales. 
+          Cada botella cuenta una historia milenaria.
+        </p>
+      </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-2">
         {mockProducts.map((p) => (
-          <div key={p.id} className="rounded-lg border border-black/10 p-3">
-            <div className="overflow-hidden rounded-md">
+          <div 
+            key={p.id} 
+            className="group rounded-xl border-2 border-[--border] bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+          >
+            <div className="overflow-hidden">
               <Image
                 src={p.imageUrl}
                 alt={p.name}
-                width={600}
-                height={400}
-                className="h-48 w-full object-cover"
+                width={800}
+                height={500}
+                className="h-64 w-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="mt-3 flex items-start justify-between">
-              <div>
-                <h3 className="font-medium">{p.name}</h3>
-                <p className="text-sm text-[--secondary]">{p.region}</p>
+            
+            <div className="p-6">
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h3 className="text-2xl font-bold text-[--foreground]">{p.name}</h3>
+                  <p className="text-sm text-[--accent] font-medium mt-1">📍 {p.region}</p>
+                </div>
+                <span className="text-2xl font-bold text-[--primary]">${p.price.toFixed(2)}</span>
               </div>
-              <span className="font-semibold">${p.price.toFixed(2)}</span>
+
+              <p className="text-[--secondary] leading-relaxed mb-6">
+                {p.description}
+              </p>
+
+              <button
+                onClick={() => add(p)}
+                className="w-full rounded-lg bg-[--primary] px-6 py-3 font-semibold text-white hover:bg-[--primary]/90 transition-colors shadow-md hover:shadow-lg"
+              >
+                🛒 Agregar al carrito
+              </button>
             </div>
-            <button
-              onClick={() => add(p)}
-              className="mt-3 w-full rounded-md bg-[--primary] px-4 py-2 font-semibold text-background hover:bg-[--primary]/90"
-            >
-              Agregar al carrito
-            </button>
           </div>
         ))}
       </div>
