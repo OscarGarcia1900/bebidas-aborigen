@@ -8,7 +8,7 @@ export const mockProducts: Product[] = [
       'Cada sorbo es un viaje a las raíces de la naturaleza, donde la sabiduría ancestral se encuentra con el placer sensorial. Bebida tradicional de Colombia con raíces ancestrales de comunidades indígenas y campesinas. Panela fermentada con nódulos de Kefir, infusionado con hierbas y especias. Rico en probióticos que favorecen la salud digestiva, aporta energía natural y refresca el cuerpo. 🏆 Ganador del 1er puesto en el Festival del Guarapo 2024.',
     price: 8.0,
     region: 'Bogotá',
-    imageUrl: '/images/guarapo.jpg',
+    imageUrl: '/images/guarapo.png',
   },
   {
     id: 'viche-curado',
@@ -17,7 +17,7 @@ export const mockProducts: Product[] = [
       'El secreto medicinal del Pacífico colombiano. Destilado artesanal afrocolombiano del Pacífico, transmitido por generaciones como bebida ritual y medicinal. Elaborado con viche (destilado de caña), hierbas curativas, raíces y especias maceradas. Reconocido por sus propiedades revitalizantes, fortalece el sistema inmune y mejora la circulación gracias a su combinación de hierbas. ¡Prueba el sabor de la caña en cada sorbo!',
     price: 35.0,
     region: 'Pacífico',
-    imageUrl: '/images/viche-curado.jpg',
+    imageUrl: '/images/viche curao.png',
   },
   {
     id: 'vinete',
@@ -26,7 +26,7 @@ export const mockProducts: Product[] = [
       'Poción afrodisíaca y revitalizante. Una bebida ancestral que fusiona la fuerza del viche con el dulzor de la caña y las especias. Bebida afrocolombiana del Pacífico, utilizada en rituales de bienestar y celebración. Elaborado con viche (destilado de caña), panela, clavos de olor, canela, vainilla y otros botánicos. Considerado un potente reconstituyente y afrodisíaco, ideal para revitalizar el cuerpo y el alma, perfecto para la salud menstrual de la mujer.',
     price: 30.0,
     region: 'Pacífico',
-    imageUrl: '/images/vinete.jpg',
+    imageUrl: '/images/vinete.png',
   },
   {
     id: 'aguardiente-nasa',
