@@ -23,13 +23,13 @@ export default function StorePage() {
             key={p.id} 
             className="group rounded-xl border-2 border-[--border] bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
           >
-            <div className="overflow-hidden">
+            <div className="overflow-hidden bg-[--background] flex items-center justify-center">
               <Image
                 src={p.imageUrl}
                 alt={p.name}
                 width={800}
                 height={500}
-                className="h-64 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="h-80 w-full object-contain group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             

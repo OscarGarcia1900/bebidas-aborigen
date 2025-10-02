@@ -40,13 +40,15 @@ export default function StoriesPage() {
 
       <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((s) => (
-          <Link key={s.id} href={`/stories/${s.id}`} className="group overflow-hidden rounded-md border">
+          <Link key={s.id} href={`/stories/${s.id}`} className="group overflow-hidden rounded-xl border-2 border-[--border] bg-white shadow-sm hover:shadow-lg transition-all">
             {s.imageUrl && (
-              <Image src={s.imageUrl} width={800} height={500} alt={s.title} className="h-48 w-full object-cover transition-transform group-hover:scale-105" />
+              <div className="overflow-hidden bg-[--background] flex items-center justify-center h-64">
+                <Image src={s.imageUrl} width={800} height={500} alt={s.title} className="w-full h-full object-contain transition-transform group-hover:scale-105" />
+              </div>
             )}
             <div className="p-4">
-              <div className="text-sm text-[--secondary]">{s.department}</div>
-              <h3 className="mt-1 text-lg font-semibold">{s.title}</h3>
+              <div className="text-sm text-[--accent] font-medium">📍 {s.department}</div>
+              <h3 className="mt-1 text-lg font-bold text-[--foreground]">{s.title}</h3>
               <p className="mt-2 line-clamp-2 text-[--secondary]">{s.content}</p>
             </div>
           </Link>
