@@ -2,39 +2,39 @@ import { Story } from '@/types/story';
 
 export const stories: Story[] = [
   {
-    id: 'chicha-historia',
-    title: 'Chicha: Bebida Sagrada de los Muiscas',
-    department: 'Boyacá',
-    content:
-      'La chicha fue el eje ceremonial de los pueblos Muiscas del altiplano cundiboyacense. Elaborada con maíz fermentado mediante un proceso ancestral de malteado, germinación y fermentación natural, esta bebida acompañaba rituales de siembra, cosecha y celebraciones comunitarias. Las mujeres sabedoras transmitían de generación en generación las técnicas precisas para lograr el equilibrio perfecto entre dulzor y acidez. Hoy, rescatamos esta tradición milenaria para honrar nuestras raíces y ofrecer una experiencia auténtica que conecta el pasado con el presente.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop',
-  },
-  {
     id: 'guarapo-historia',
-    title: 'Guarapo: El Néctar del Campo Colombiano',
-    department: 'Cundinamarca',
+    title: 'Guarapo Aborigen: Campeón de Bogotá',
+    department: 'Bogotá',
     content:
-      'El guarapo de caña es la bebida tradicional que acompañó las jornadas de los campesinos colombianos por siglos. Extraído del jugo fresco de la caña de azúcar y sometido a una ligera fermentación natural, el guarapo era el refresco energizante por excelencia en trapiches y fiestas patronales. Su preparación artesanal requiere cañas de la mejor calidad y el conocimiento preciso del tiempo de fermentación. Con su dulzor natural y toque efervescente, el guarapo representa la generosidad de la tierra y el trabajo digno del campo colombiano.',
+      'Cada sorbo es un viaje a las raíces de la naturaleza, donde la sabiduría ancestral se encuentra con el placer sensorial. Nuestro Guarapo es una bebida tradicional de Colombia con raíces ancestrales de comunidades indígenas y campesinas, elaborado con panela fermentada con nódulos de Kefir e infusionado con hierbas y especias. Rico en probióticos que favorecen la salud digestiva, aporta energía natural y refresca el cuerpo. Estamos orgullosos de haber ganado el 1er puesto en el Festival del Guarapo 2024, siendo reconocidos como el mejor guarapo de Bogotá entre 23 concursantes. Producto vivo y sin conservantes, debe consumirse con prontitud para preservar su calidad.',
     imageUrl:
-      'https://images.unsplash.com/photo-1510627498534-cf7e9002facc?q=80&w=2070&auto=format&fit=crop',
+      'https://placehold.co/800x600/8b4513/ffffff?text=Guarapo+Aborigen',
   },
   {
-    id: 'masato-historia',
-    title: 'Masato: Tradición Dulce del Tolima',
-    department: 'Tolima',
-    content:
-      'El masato es una bebida tradicional que combina la riqueza del arroz o la yuca con la dulzura de la panela y el toque aromático de especias como la canela y el clavo. Preparado por las comunidades indígenas del Tolima y el piedemonte amazónico, el masato puede ser fermentado o fresco, según la ocasión. En festividades, se prefiere fermentado para celebrar con su suave efecto estimulante; en el día a día, se disfruta fresco como bebida nutritiva y reconfortante. Su textura cremosa y sabor delicado lo convierten en el acompañante perfecto de la gastronomía tradicional colombiana.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1582583843919-0c8dfe6b1f58?q=80&w=2070&auto=format&fit=crop',
-  },
-  {
-    id: 'biche-historia',
-    title: 'Biche: Resistencia y Cultura del Pacífico',
+    id: 'viche-curado-historia',
+    title: 'Viche Curado: Secreto Medicinal del Pacífico',
     department: 'Pacífico',
     content:
-      'El biche es mucho más que un aguardiente: es el símbolo de resistencia, identidad y patrimonio cultural de las comunidades afrodescendientes del Pacífico colombiano. Destilado artesanalmente a partir de caña de azúcar en alambiques tradicionales, el biche se aromatiza con hierbas medicinales y especias locales, creando un licor único de carácter intenso y profundamente arraigado en la tradición oral. Usado tanto en celebraciones como en rituales curativos, el biche representa la fuerza, la creatividad y el espíritu indomable de los pueblos del litoral. Al beberlo, honramos la memoria y el legado de quienes forjaron su identidad en medio de la adversidad.',
+      'El Viche Curado es un destilado artesanal afrocolombiano del Pacífico, transmitido por generaciones como bebida ritual y medicinal. Elaborado con viche (destilado de caña), hierbas curativas, raíces y especias maceradas, esta bebida es reconocida por sus propiedades revitalizantes que fortalecen el sistema inmune y mejoran la circulación gracias a su combinación de hierbas. Es el secreto medicinal del Pacífico colombiano que conecta con la tradición ancestral. Para disfrutar su esencia, debe mantenerse bien cerrado y alejado de la luz directa. ¡Prueba el sabor de la caña en cada sorbo!',
     imageUrl:
-      'https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=2070&auto=format&fit=crop',
+      'https://placehold.co/800x600/5c4033/ffffff?text=Viche+Curado',
+  },
+  {
+    id: 'vinete-historia',
+    title: 'Vinete: Poción Afrodisíaca del Pacífico',
+    department: 'Pacífico',
+    content:
+      'El Vinete es una bebida ancestral afrocolombiana del Pacífico que fusiona la fuerza del viche con el dulzor de la caña y las especias. Tradicionalmente utilizada en rituales de bienestar y celebración, esta poción es elaborada con viche (destilado de caña), panela, clavos de olor, canela, vainilla y otros botánicos. Considerado un potente reconstituyente y afrodisíaco, es ideal para revitalizar el cuerpo y el alma, siendo perfecto para la salud menstrual de la mujer. Su mezcla perfecta crea un equilibrio irresistible entre dulzura y acidez, invitando a disfrutar la vida con cada sorbo.',
+    imageUrl:
+      'https://placehold.co/800x600/d4a574/2c1810?text=Vinete',
+  },
+  {
+    id: 'aguardiente-nasa-historia',
+    title: 'Aguardiente Nasa: Legado de Caloto',
+    department: 'Cauca',
+    content:
+      'Más que una bebida, el Aguardiente Artesanal Nasa es un legado ancestral de la comunidad indígena Nasa de Caloto, Cauca. Es una fuente de energía y conexión con la tierra, perfecta para el cuerpo y el espíritu. Esta bebida tradicional es utilizada para fortalecer el cuerpo y la mente, elaborada con destilado de caña curado con plantas sagradas. Aporta energía, calienta el vientre y conecta con la sabiduría ancestral a través de sus ingredientes naturales. Con 30% de volumen alcohólico, este aguardiente artesanal representa la resistencia y el conocimiento milenario del pueblo Nasa.',
+    imageUrl:
+      'https://placehold.co/800x600/2c1810/d4a574?text=Aguardiente+Nasa',
   },
 ];
