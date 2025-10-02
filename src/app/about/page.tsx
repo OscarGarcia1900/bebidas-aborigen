@@ -16,14 +16,16 @@ export default function AboutPage() {
         <div className="bg-white rounded-xl border-2 border-[--border] p-8 shadow-sm">
           <h2 className="text-2xl font-bold text-[--primary] mb-6">👋 Nuestra Historia</h2>
           
-          <div className="mb-8 rounded-lg overflow-hidden border-2 border-[--border]">
-            <Image 
-              src="/images/angelica y oscar.png"
-              alt="Angélica y Óscar - Fundadores de Bebidas Ancestrales Aborigen"
-              width={900}
-              height={1276}
-              className="w-full h-auto"
-            />
+          <div className="mb-8 flex justify-center">
+            <div className="rounded-lg overflow-hidden border-2 border-[--border] max-w-md">
+              <Image 
+                src="/images/angelica y oscar.png"
+                alt="Angélica y Óscar - Fundadores de Bebidas Ancestrales Aborigen"
+                width={900}
+                height={1276}
+                className="w-full h-auto"
+              />
+            </div>
           </div>
 
           <p className="text-[--secondary] leading-relaxed mb-4">
