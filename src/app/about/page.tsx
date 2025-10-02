@@ -1,5 +1,6 @@
 import { Gallery } from '@/components/Gallery';
 import { galleryImages } from '@/data/gallery';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -13,7 +14,18 @@ export default function AboutPage() {
 
       <section className="mt-8 prose prose-lg max-w-none">
         <div className="bg-white rounded-xl border-2 border-[--border] p-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-[--primary] mb-4">👋 Nuestra Historia</h2>
+          <h2 className="text-2xl font-bold text-[--primary] mb-6">👋 Nuestra Historia</h2>
+          
+          <div className="mb-8 rounded-lg overflow-hidden border-2 border-[--border]">
+            <Image 
+              src="/images/angelica y oscar.png"
+              alt="Angélica y Óscar - Fundadores de Bebidas Ancestrales Aborigen"
+              width={900}
+              height={1276}
+              className="w-full h-auto"
+            />
+          </div>
+
           <p className="text-[--secondary] leading-relaxed mb-4">
             ¡Hola! Somos <strong>Angélica y Óscar</strong>. Desde el año 2020, hemos estado 
             explorando el arte de las bebidas fermentadas y destiladas.
@@ -44,7 +56,29 @@ export default function AboutPage() {
 
       <section className="mt-10 prose prose-lg max-w-none">
         <div className="bg-gradient-to-br from-[--accent]/10 to-[--primary]/10 rounded-xl border-2 border-[--primary]/30 p-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-[--primary] mb-4">🏆 Reconocimientos</h2>
+          <h2 className="text-2xl font-bold text-[--primary] mb-6">🏆 Reconocimientos</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="rounded-lg overflow-hidden border-2 border-[--border] bg-white">
+              <Image 
+                src="/images/reconocimiento tercer puesto.png"
+                alt="3er Puesto Festival del Guarapo 2023"
+                width={738}
+                height={534}
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="rounded-lg overflow-hidden border-2 border-[--border] bg-white">
+              <Image 
+                src="/images/reconocimiento primer puesto.png"
+                alt="1er Puesto Festival del Guarapo 2024"
+                width={742}
+                height={524}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
           <p className="text-[--secondary] leading-relaxed mb-4">
             Estamos orgullosos de haber obtenido el <strong>3er puesto en el Festival del Guarapo 
             2023</strong> y el <strong>1er puesto en 2024</strong>, siendo reconocidos como el 
