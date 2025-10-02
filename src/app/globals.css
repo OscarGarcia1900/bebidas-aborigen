@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F5F5F3; /* Un blanco hueso cálido, más orgánico */
-  --foreground: #1C1917; /* Un negro suave, casi café, para el texto */
-  --primary: #84cc16; /* Verde lima para botones y acentos */
-  --secondary: #A8A29E; /* Un gris piedra para elementos secundarios */
+  --background: #f8f5f0; /* Beige suave */
+  --foreground: #2c1810; /* Marrón oscuro */
+  --primary: #8b4513; /* Terracota */
+  --secondary: #5c4033; /* Marrón medio */
+  --accent: #d4a574; /* Dorado tierra */
+  --border: #d4c5b0; /* Beige cálido */
 }
 
 @theme inline {
@@ -12,13 +14,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1C1917; /* El café oscuro como fondo */
-    --foreground: #F5F5F3; /* El blanco hueso para texto */
-  }
 }
 
 body {
