@@ -10,26 +10,29 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-[#d4a574] bg-[#d4a574] backdrop-blur shadow-md">
       <div className="container flex h-14 max-w-screen-2xl items-center px-4">
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center space-x-2 text-lg font-semibold text-[--foreground]"
+          className="flex items-center space-x-2 text-lg font-semibold text-white"
         >
-          🍶 Bebidas Ancestrales
+          🏺 Aborigen
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="ml-6 hidden md:flex items-center space-x-6 text-sm font-medium">
-          <Link href="/store" className="hover:text-[--primary] transition-colors">
+        <nav className="ml-6 hidden md:flex items-center space-x-6 text-sm font-medium text-white">
+          <Link href="/store" className="hover:text-white/80 transition-colors">
             Tienda
           </Link>
-          <Link href="/stories" className="hover:text-[--primary] transition-colors">
+          <Link href="/stories" className="hover:text-white/80 transition-colors">
             Historias
           </Link>
-          <Link href="/about" className="hover:text-[--primary] transition-colors">
+          <Link href="/about" className="hover:text-white/80 transition-colors">
             Nosotros
+          </Link>
+          <Link href="/contact" className="hover:text-white/80 transition-colors">
+            Contacto
           </Link>
         </nav>
 
@@ -38,7 +41,7 @@ export function Header() {
           {/* Cart */}
           <Link 
             aria-label="Carrito de compras" 
-            className="relative rounded-full p-2 hover:bg-[--border] transition-colors" 
+            className="relative rounded-full p-2 hover:bg-white/20 transition-colors text-white" 
             href="/cart"
           >
             <svg
@@ -66,7 +69,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden rounded-full p-2 hover:bg-[--border] transition-colors"
+            className="md:hidden rounded-full p-2 hover:bg-white/20 transition-colors text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menú"
           >
@@ -88,35 +91,42 @@ export function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border/40 bg-background/95 backdrop-blur">
+        <div className="md:hidden border-t border-white/30 bg-[#d4a574]">
           <nav className="container px-4 py-4 flex flex-col space-y-3">
             <Link 
               href="/" 
-              className="text-base font-medium hover:text-[--primary] transition-colors py-2"
+              className="text-base font-medium text-white hover:text-white/80 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               🏠 Inicio
             </Link>
             <Link 
               href="/store" 
-              className="text-base font-medium hover:text-[--primary] transition-colors py-2"
+              className="text-base font-medium text-white hover:text-white/80 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               🛒 Tienda
             </Link>
             <Link 
               href="/stories" 
-              className="text-base font-medium hover:text-[--primary] transition-colors py-2"
+              className="text-base font-medium text-white hover:text-white/80 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               📖 Historias
             </Link>
             <Link 
               href="/about" 
-              className="text-base font-medium hover:text-[--primary] transition-colors py-2"
+              className="text-base font-medium text-white hover:text-white/80 transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               👋 Nosotros
+            </Link>
+            <Link 
+              href="/contact" 
+              className="text-base font-medium text-white hover:text-white/80 transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              📧 Contacto
             </Link>
           </nav>
         </div>

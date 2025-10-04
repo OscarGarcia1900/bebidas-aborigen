@@ -4,6 +4,13 @@ import Image from 'next/image';
 export function ProductCard({ product }: { product: Product }) {
   return (
     <div className="group relative">
+      {/* Badge de Campeón solo para Guarapo */}
+      {product.id === 'guarapo-aborigen' && (
+        <div className="absolute top-2 left-2 z-10 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white px-2 py-1 rounded-full font-bold text-xs shadow-lg flex items-center gap-1">
+          🏆 Campeón
+        </div>
+      )}
+      
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
         <Image
           src={product.imageUrl}

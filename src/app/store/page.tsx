@@ -3,6 +3,7 @@
 import { mockProducts } from '@/data/products';
 import { useCart } from '@/context/CartContext';
 import Image from 'next/image';
+import { ShareButtons } from '@/components/ShareButtons';
 
 export default function StorePage() {
   const { add } = useCart();
@@ -21,8 +22,15 @@ export default function StorePage() {
         {mockProducts.map((p) => (
           <div 
             key={p.id} 
-            className="group rounded-xl border-2 border-[--border] bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+            className="group rounded-xl border-2 border-[--border] bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden relative"
           >
+            {/* Badge de Campeón solo para Guarapo */}
+            {p.id === 'guarapo-aborigen' && (
+              <div className="absolute top-4 left-4 z-10 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white px-3 py-1.5 rounded-full font-bold text-sm shadow-lg flex items-center gap-1 animate-pulse">
+                🏆 Campeón 2024
+              </div>
+            )}
+            
             <div className="overflow-hidden bg-[--background] flex items-center justify-center">
               <Image
                 src={p.imageUrl}
@@ -52,6 +60,12 @@ export default function StorePage() {
               >
                 🛒 Agregar al carrito
               </button>
+
+              <ShareButtons 
+                productName={p.name}
+                productDescription={p.description}
+                productUrl={`https://aborigen.com/store#${p.id}`}
+              />
             </div>
           </div>
         ))}

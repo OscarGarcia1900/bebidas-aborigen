@@ -37,4 +37,13 @@ export const mockProducts: Product[] = [
     region: 'Caloto - Cauca',
     imageUrl: '/images/aguardiente-nasa.jpg',
   },
+  {
+    id: 'caipirinha',
+    name: 'Caipiriña',
+    description:
+      'El cóctel icónico de Brasil que conquista paladares. Una mezcla refrescante y vibrante perfecta para cualquier ocasión. Bebida tradicional brasileña que combina cachaça (aguardiente de caña), limón fresco, azúcar y hielo. Su sabor agridulce y refrescante la hace ideal para acompañar celebraciones y momentos especiales. Una experiencia tropical en cada vaso.',
+    price: 10.0,
+    region: 'Brasil',
+    imageUrl: '/images/caipiriña.png',
+  },
 ];

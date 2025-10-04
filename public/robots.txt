@@ -1,0 +1,14 @@
+# Robots.txt para Aborigen - Bebidas Ancestrales
+
+User-agent: *
+Allow: /
+Allow: /store
+Allow: /stories
+Allow: /about
+Allow: /cart
+
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://aborigen.com/sitemap.xml
+
