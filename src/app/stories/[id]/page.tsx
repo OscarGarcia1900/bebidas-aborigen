@@ -2,8 +2,9 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { stories } from '@/data/stories';
 
-export default function StoryDetail({ params }: { params: { id: string } }) {
-  const story = stories.find((s) => s.id === params.id);
+export default async function StoryDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const story = stories.find((s) => s.id === id);
   if (!story) return notFound();
 
   return (

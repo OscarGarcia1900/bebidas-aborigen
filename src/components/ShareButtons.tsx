@@ -32,7 +32,7 @@ export function ShareButtons({ productName, productDescription, productUrl }: Sh
 
   return (
     <div className="flex items-center gap-2 mt-4">
-      <span className="text-sm text-[--secondary] font-medium">Compartir:</span>
+      <span className="text-sm text-[#5c4033] font-medium">Compartir:</span>
       
       <button
         onClick={shareOnWhatsApp}
@@ -69,7 +69,7 @@ export function ShareButtons({ productName, productDescription, productUrl }: Sh
 
       <button
         onClick={copyLink}
-        className="p-2 rounded-full bg-[--accent] text-white hover:bg-[--primary] transition-colors"
+        className="p-2 rounded-full bg-[#d4a574] text-white hover:bg-[#8b4513] transition-colors"
         aria-label="Copiar enlace"
         title="Copiar enlace"
       >

@@ -1,0 +1,15 @@
+# .htaccess para cPanel con Node.js
+# Este archivo redirige las peticiones a tu aplicación Node.js en el puerto 3000
+# Solo úsalo si NO estás usando Node.js Selector de cPanel
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Redirigir todo a Node.js (solo si usas proxy manual)
+  RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]
+</IfModule>
+
+# NOTA: Si usas Node.js Selector de cPanel, NO necesitas este archivo
+# El selector maneja el proxy automáticamente
+

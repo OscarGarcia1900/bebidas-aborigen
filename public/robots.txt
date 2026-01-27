@@ -10,5 +10,5 @@ Allow: /cart
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://aborigen.com/sitemap.xml
+Sitemap: https://bebidasaborigen.com/sitemap.xml
 

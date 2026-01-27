@@ -50,8 +50,8 @@ export default function ContactPage() {
       <Header />
       <main className="mx-auto max-w-4xl px-6 py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-[--foreground] mb-4">📧 Contáctanos</h1>
-          <p className="text-lg text-[--secondary]">
+          <h1 className="text-4xl font-bold text-[#2c1810] mb-4">📧 Contáctanos</h1>
+          <p className="text-lg text-[#5c4033]">
             ¿Tienes preguntas o quieres hacer un pedido? Estamos aquí para ayudarte
           </p>
         </div>

@@ -28,6 +28,9 @@ export function Header() {
           <Link href="/stories" className="hover:text-white/80 transition-colors">
             Historias
           </Link>
+          <Link href="/distribuidores" className="hover:text-white/80 transition-colors">
+            Distribuidores
+          </Link>
           <Link href="/about" className="hover:text-white/80 transition-colors">
             Nosotros
           </Link>
@@ -61,7 +64,7 @@ export function Header() {
               <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16" />
             </svg>
             {qty > 0 && (
-              <span className="absolute -right-1 -top-1 rounded-full bg-[--primary] px-1.5 text-xs font-bold text-white">
+              <span className="absolute -right-1 -top-1 rounded-full bg-[#8b4513] px-1.5 text-xs font-bold text-white">
                 {qty}
               </span>
             )}
@@ -113,6 +116,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               📖 Historias
+            </Link>
+            <Link 
+              href="/distribuidores" 
+              className="text-base font-medium text-white hover:text-white/80 transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              🤝 Distribuidores
             </Link>
             <Link 
               href="/about" 

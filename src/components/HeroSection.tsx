@@ -25,7 +25,7 @@ export function HeroSection() {
         </p>
         <Link 
           href="/store"
-          className="mt-8 rounded-md bg-[--primary] px-8 py-3 text-lg font-semibold text-white hover:bg-[--primary]/90 transition-all shadow-lg hover:shadow-xl hover:scale-105"
+          className="mt-8 rounded-md bg-white px-8 py-3 text-lg font-semibold text-[#2c1810] hover:bg-white/90 transition-all shadow-lg hover:shadow-xl hover:scale-105"
         >
           Explorar la Tienda
         </Link>

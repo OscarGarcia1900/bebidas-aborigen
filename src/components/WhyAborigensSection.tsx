@@ -23,13 +23,13 @@ export function WhyAborigenSection() {
   ];
 
   return (
-    <section className="bg-[--background] py-12 sm:py-16">
+    <section className="bg-[#f8f5f0] py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-[--foreground] sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[#2c1810] sm:text-4xl">
             ¿Por qué elegir Aborigen?
           </h2>
-          <p className="mt-4 text-lg text-[--secondary]">
+          <p className="mt-4 text-lg text-[#5c4033]">
             Más que bebidas, somos guardianes de la tradición y el sabor auténtico de Colombia
           </p>
         </div>
@@ -39,13 +39,13 @@ export function WhyAborigenSection() {
             {benefits.map((benefit, index) => (
               <div 
                 key={index}
-                className="relative overflow-hidden rounded-2xl border-2 border-[--accent] bg-white p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="relative overflow-hidden rounded-2xl border-2 border-[#d4a574] bg-white p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <div className="text-5xl mb-4">{benefit.icon}</div>
-                <h3 className="text-xl font-bold text-[--foreground] mb-3">
+                <h3 className="text-xl font-bold text-[#2c1810] mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-[--secondary] leading-relaxed">
+                <p className="text-[#5c4033] leading-relaxed">
                   {benefit.description}
                 </p>
               </div>

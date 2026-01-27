@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://bebidasaborigen.com'),
   title: "Aborigen - Bebidas Ancestrales Artesanales | Guarapo, Viche, Vinete",
   description: "Bebidas ancestrales artesanales de Colombia. Guarapo campeón 2024, Viche Curado, Vinete y Aguardiente Nasa. Probióticos naturales, tradición del Pacífico y comunidades indígenas. Envíos en Bogotá.",
   keywords: ["bebidas ancestrales", "guarapo artesanal", "viche curado", "vinete", "aguardiente nasa", "bebidas fermentadas", "probióticos naturales", "bebidas del pacífico", "bebidas colombianas", "guarapo bogotá"],
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_CO",
-    url: "https://aborigen.com",
+    url: "https://bebidasaborigen.com",
     siteName: "Aborigen - Bebidas Ancestrales",
     title: "Aborigen - Bebidas Ancestrales Artesanales de Colombia",
     description: "Guarapo campeón 2024, Viche Curado del Pacífico, Vinete y más. Tradición, salud y sabor en cada botella.",

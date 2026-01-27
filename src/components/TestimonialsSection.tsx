@@ -74,7 +74,7 @@ export function TestimonialsSection() {
                 ))}
               </div>
               <p className="text-[--secondary] italic leading-relaxed mb-6">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
               <div className="border-t border-[--border] pt-4">
                 <p className="font-bold text-[--foreground]">{testimonial.name}</p>

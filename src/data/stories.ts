@@ -33,4 +33,12 @@ export const stories: Story[] = [
       'Más que una bebida, el Aguardiente Artesanal Nasa es un legado ancestral de la comunidad indígena Nasa de Caloto, Cauca. Es una fuente de energía y conexión con la tierra, perfecta para el cuerpo y el espíritu. Esta bebida tradicional es utilizada para fortalecer el cuerpo y la mente, elaborada con destilado de caña curado con plantas sagradas. Aporta energía, calienta el vientre y conecta con la sabiduría ancestral a través de sus ingredientes naturales. Con 30% de volumen alcohólico, este aguardiente artesanal representa la resistencia y el conocimiento milenario del pueblo Nasa.',
     imageUrl: '/images/aguardiente-nasa.jpg',
   },
+  {
+    id: 'chapil-historia',
+    title: 'Chapil: Tradición Campesina de Nariño',
+    department: 'Nariño',
+    content:
+      'En las montañas de Ricaurte, Nariño, donde el verde de los cultivos se funde con el cielo andino, los campesinos han perfeccionado durante generaciones el arte de elaborar el Chapil. Esta bebida fermentada, hecha a base de caña de azúcar y hierbas aromáticas de la región, es el fruto del conocimiento transmitido de abuelos a padres, de padres a hijos. Cada familia campesina guarda sus secretos: el tiempo exacto de fermentación, las hierbas silvestres que crecen en sus parcelas, el punto perfecto de dulzura. El Chapil no es solo una bebida, es la expresión líquida del trabajo de la tierra, del madrugón en la molienda, del orgullo de producir con las propias manos. En las fiestas patronales y en las jornadas de trabajo colectivo, compartir un vaso de Chapil es renovar el pacto con la tierra y con la comunidad. Es celebrar que las tradiciones no se pierden cuando hay quien las mantiene vivas. Con su sabor terroso y dulce, el Chapil te invita a conocer el sur profundo de Colombia, ese que trabaja la tierra y honra sus raíces con cada cosecha.',
+    imageUrl: '/images/vinete.png',
+  },
 ];

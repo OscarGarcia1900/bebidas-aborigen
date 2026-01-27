@@ -23,7 +23,7 @@ export default function StoriesPage() {
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <button
           onClick={() => setDept('Todos')}
-          className={`rounded-md border px-3 py-1 ${dept === 'Todos' ? 'bg-[--primary] text-background' : ''}`}
+          className={`rounded-md border px-3 py-1 transition-colors ${dept === 'Todos' ? 'bg-[#8b4513] text-white border-[#8b4513]' : 'border-[#d4c5b0] hover:bg-[#f8f5f0]'}`}
         >
           Todos
         </button>
@@ -31,7 +31,7 @@ export default function StoriesPage() {
           <button
             key={d}
             onClick={() => setDept(d)}
-            className={`rounded-md border px-3 py-1 ${dept === d ? 'bg-[--primary] text-background' : ''}`}
+            className={`rounded-md border px-3 py-1 transition-colors ${dept === d ? 'bg-[#8b4513] text-white border-[#8b4513]' : 'border-[#d4c5b0] hover:bg-[#f8f5f0]'}`}
           >
             {d}
           </button>
@@ -40,16 +40,16 @@ export default function StoriesPage() {
 
       <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((s) => (
-          <Link key={s.id} href={`/stories/${s.id}`} className="group overflow-hidden rounded-xl border-2 border-[--border] bg-white shadow-sm hover:shadow-lg transition-all">
+          <Link key={s.id} href={`/stories/${s.id}`} className="group overflow-hidden rounded-xl border-2 border-[#d4c5b0] bg-white shadow-sm hover:shadow-lg transition-all">
             {s.imageUrl && (
-              <div className="overflow-hidden bg-[--background] flex items-center justify-center h-64">
+              <div className="overflow-hidden bg-[#f8f5f0] flex items-center justify-center h-64">
                 <Image src={s.imageUrl} width={800} height={500} alt={s.title} className="w-full h-full object-contain transition-transform group-hover:scale-105" />
               </div>
             )}
             <div className="p-4">
-              <div className="text-sm text-[--accent] font-medium">📍 {s.department}</div>
-              <h3 className="mt-1 text-lg font-bold text-[--foreground]">{s.title}</h3>
-              <p className="mt-2 line-clamp-2 text-[--secondary]">{s.content}</p>
+              <div className="text-sm text-[#d4a574] font-medium">📍 {s.department}</div>
+              <h3 className="mt-1 text-lg font-bold text-[#2c1810]">{s.title}</h3>
+              <p className="mt-2 line-clamp-2 text-[#5c4033]">{s.content}</p>
             </div>
           </Link>
         ))}
