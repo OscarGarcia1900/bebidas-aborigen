@@ -11,17 +11,7 @@ function getStripe() {
   const secretKey = process.env.STRIPE_SECRET_KEY;
   
   if (!secretKey) {
-    // Durante el build, si no hay clave, lanzar un error descriptivo
-    // pero que no cause que el build falle completamente
-    if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
-      throw new Error('STRIPE_SECRET_KEY is required in production');
-    }
-    // Para desarrollo/build, usar una clave de prueba temporal válida
-    // Formato: sk_test_ seguido de caracteres alfanuméricos (mínimo 32 caracteres)
-    const dummyKey = 'sk_test_00000000000000000000000000000000000000000000000000000000000000000000';
-    return new Stripe(dummyKey, {
-      apiVersion: '2025-08-27.basil',
-    });
+    throw new Error('STRIPE_SECRET_KEY is not set. Please configure it in your environment variables.');
   }
   
   return new Stripe(secretKey, {
