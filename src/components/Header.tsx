@@ -22,6 +22,9 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="ml-6 hidden md:flex items-center space-x-6 text-sm font-medium text-white">
+          <Link href="/" className="hover:text-white/80 transition-colors">
+            Inicio
+          </Link>
           <Link href="/store" className="hover:text-white/80 transition-colors">
             Tienda
           </Link>
