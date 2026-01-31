@@ -12,7 +12,11 @@
   },
   "dependencies": {
     "@stripe/stripe-js": "^7.9.0",
+<<<<<<< Updated upstream
     "next": "15.5.9",
+=======
+    "next": "15.5.3",
+>>>>>>> Stashed changes
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "stripe": "^18.5.0"
@@ -24,7 +28,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
+<<<<<<< Updated upstream
     "eslint-config-next": "15.5.9",
+=======
+    "eslint-config-next": "15.5.3",
+>>>>>>> Stashed changes
     "tailwindcss": "^4",
     "typescript": "^5"
   }
