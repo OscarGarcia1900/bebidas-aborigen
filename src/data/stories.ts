@@ -41,4 +41,12 @@ export const stories: Story[] = [
       'En las montañas de Ricaurte, Nariño, donde el verde de los cultivos se funde con el cielo andino, los campesinos han perfeccionado durante generaciones el arte de elaborar el Chapil. Esta bebida fermentada, hecha a base de caña de azúcar y hierbas aromáticas de la región, es el fruto del conocimiento transmitido de abuelos a padres, de padres a hijos. Cada familia campesina guarda sus secretos: el tiempo exacto de fermentación, las hierbas silvestres que crecen en sus parcelas, el punto perfecto de dulzura. El Chapil no es solo una bebida, es la expresión líquida del trabajo de la tierra, del madrugón en la molienda, del orgullo de producir con las propias manos. En las fiestas patronales y en las jornadas de trabajo colectivo, compartir un vaso de Chapil es renovar el pacto con la tierra y con la comunidad. Es celebrar que las tradiciones no se pierden cuando hay quien las mantiene vivas. Con su sabor terroso y dulce, el Chapil te invita a conocer el sur profundo de Colombia, ese que trabaja la tierra y honra sus raíces con cada cosecha.',
     imageUrl: '/images/Chapil.jpg',
   },
+  {
+    id: 'churro-historia',
+    title: 'Churro: El Alma Destilada del Desierto',
+    department: 'La Guajira',
+    content:
+      'En el corazón del desierto guajiro, donde el sol quema la arena y el viento sopla con fuerza, las comunidades Wayúu han preservado durante siglos el arte de destilar el Churro. Esta bebida fuerte, rústica y tradicional es más que un aguardiente: es el alma destilada del desierto, una conexión espiritual con la tierra y con los ancestros. Elaborado a partir del guarapo, jugo extraído de la caña de azúcar que luego se destila y se infusiona con roble y otras plantas medicinales del territorio, el Churro es utilizado por la comunidad Wayúu en rituales sagrados, fiestas tradicionales y con fines medicinales. Se emplea para baños curativos, aliviar dolores y tratar picaduras, siendo parte integral de la medicina tradicional wayúu. Cada sorbo es un encuentro con la resistencia y sabiduría de un pueblo que ha sobrevivido en uno de los territorios más áridos de Colombia, manteniendo vivas sus tradiciones y su conexión con la naturaleza. El Churro no es solo una bebida, es la expresión de la fortaleza wayúu, del respeto por la tierra y del conocimiento ancestral transmitido de generación en generación.',
+    imageUrl: '/images/Churro.jpg',
+  },
 ];
