@@ -46,7 +46,7 @@ export default function StorePage() {
                 )}
                 
                 {/* Badge de Nuevo para Chapil */}
-                {p.id === 'chapil' && (
+                {(p.id === 'chapil-375ml' || p.id === 'chapil-175ml') && (
                   <div className="bg-gradient-to-r from-green-400 to-emerald-500 text-white px-3 py-1.5 rounded-full font-bold text-sm shadow-lg flex items-center gap-1">
                     ✨ Nuevo
                   </div>

@@ -79,13 +79,25 @@ export default function CartPage() {
           })),
         }),
       });
+      
       const data = await res.json();
+      
+      // Si hay un error en la respuesta
+      if (!res.ok || data.error) {
+        console.error('Error de Stripe:', data.error);
+        alert(`Error: ${data.error || 'No se pudo iniciar el pago con Stripe. Por favor usa otro método de pago.'}`);
+        return;
+      }
+      
+      // Si hay una URL, redirigir
       if (data.url) {
         window.location.href = data.url;
       } else {
+        console.error('Respuesta de Stripe sin URL:', data);
         alert('No se pudo iniciar el pago con Stripe. Por favor usa otro método de pago.');
       }
-    } catch {
+    } catch (error) {
+      console.error('Error al iniciar pago con Stripe:', error);
       alert('Error iniciando pago con Stripe. Por favor usa WhatsApp o contacta con nosotros.');
     }
   }

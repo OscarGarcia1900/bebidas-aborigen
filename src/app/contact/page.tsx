@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { Header } from '@/components/Header';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -46,9 +45,7 @@ export default function ContactPage() {
   };
 
   return (
-    <>
-      <Header />
-      <main className="mx-auto max-w-4xl px-6 py-16">
+    <main className="mx-auto max-w-4xl px-6 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-[#2c1810] mb-4">📧 Contáctanos</h1>
           <p className="text-lg text-[#5c4033]">
@@ -204,7 +201,6 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-    </>
   );
 }
 
