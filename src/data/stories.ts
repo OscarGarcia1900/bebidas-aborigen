@@ -39,6 +39,6 @@ export const stories: Story[] = [
     department: 'Nariño',
     content:
       'En las montañas de Ricaurte, Nariño, donde el verde de los cultivos se funde con el cielo andino, los campesinos han perfeccionado durante generaciones el arte de elaborar el Chapil. Esta bebida fermentada, hecha a base de caña de azúcar y hierbas aromáticas de la región, es el fruto del conocimiento transmitido de abuelos a padres, de padres a hijos. Cada familia campesina guarda sus secretos: el tiempo exacto de fermentación, las hierbas silvestres que crecen en sus parcelas, el punto perfecto de dulzura. El Chapil no es solo una bebida, es la expresión líquida del trabajo de la tierra, del madrugón en la molienda, del orgullo de producir con las propias manos. En las fiestas patronales y en las jornadas de trabajo colectivo, compartir un vaso de Chapil es renovar el pacto con la tierra y con la comunidad. Es celebrar que las tradiciones no se pierden cuando hay quien las mantiene vivas. Con su sabor terroso y dulce, el Chapil te invita a conocer el sur profundo de Colombia, ese que trabaja la tierra y honra sus raíces con cada cosecha.',
-    imageUrl: '/images/vinete.png',
+    imageUrl: '/images/Chapil.jpg',
   },
 ];
